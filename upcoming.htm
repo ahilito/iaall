@@ -10,253 +10,435 @@
   <style type="text/css">
     p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Courier; -webkit-text-stroke: #000000; min-height: 14.0px}
     p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Courier; -webkit-text-stroke: #000000; min-height: 17.0px}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Courier; color: #101010; -webkit-text-stroke: #101010; background-color: #ffffff; min-height: 17.0px}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; min-height: 16.0px}
     p.p6 {margin: 0.0px 0.0px 0.0px 0.0px}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; background-color: #ffffff; min-height: 14.0px}
     font.f1 {font-kerning: none}
     font.f2 {font: 36.0px Courier; font-kerning: none; color: #0b0b0b; -webkit-text-stroke: 0px #0b0b0b}
     font.f3 {font: 14.0px Courier; font-kerning: none; -webkit-text-stroke: 0px #000000}
     font.f4 {font: 14.0px Courier; font-kerning: none; color: #103cc0; -webkit-text-stroke: 0px #103cc0}
-    font.f5 {font: 14.0px Courier; font-kerning: none; color: #101010; -webkit-text-stroke: 0px #101010}
     table.t1 {border-collapse: collapse; table-layout: fixed}
-    td.td1 {width: 188.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #c1c1c1 #c1c1c1 #bebdbd #c1c1c1; padding: 2.0px 3.0px 2.0px 3.0px}
-    td.td2 {width: 9.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #c1c1c1 #c1c1c1 #bebdbd #c1c1c1; padding: 2.0px 3.0px 2.0px 3.0px}
-    td.td3 {width: 225.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #c1c1c1 #c1c1c1 #bebdbd #c1c1c1; padding: 2.0px 3.0px 2.0px 3.0px}
-    td.td4 {width: 98.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #c1c1c1 #c1c1c1 #bebdbd #c1c1c1; padding: 2.0px 3.0px 2.0px 3.0px}
-    td.td5 {width: 243.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #c1c1c1 #c1c1c1 #bebdbd #c1c1c1; padding: 2.0px 3.0px 2.0px 3.0px}
+    td.td1 {width: 193.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #c1c1c1 #c1c1c1 #c1c1c1 #c1c1c1; padding: 2.0px 3.0px 2.0px 3.0px}
+    td.td2 {width: 16.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #c1c1c1 #c1c1c1 #c1c1c1 #c1c1c1; padding: 2.0px 3.0px 2.0px 3.0px}
+    td.td3 {width: 276.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #c1c1c1 #c1c1c1 #c1c1c1 #c1c1c1; padding: 2.0px 3.0px 2.0px 3.0px}
+    td.td4 {width: 201.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #c1c1c1 #c1c1c1 #c1c1c1 #c1c1c1; padding: 2.0px 3.0px 2.0px 3.0px}
+    td.td5 {width: 391.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #c1c1c1 #c1c1c1 #c1c1c1 #c1c1c1; padding: 2.0px 3.0px 2.0px 3.0px}
+    td.td6 {width: 344.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #c1c1c1 #c1c1c1 #c1c1c1 #c1c1c1; padding: 2.0px 3.0px 2.0px 3.0px}
+    td.td7 {width: 391.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #c1c1c1 #c1c1c1 #bebdbd #c1c1c1; padding: 2.0px 3.0px 2.0px 3.0px}
+    td.td8 {width: 193.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #c1c1c1 #c1c1c1 #bebdbd #c1c1c1; padding: 2.0px 3.0px 2.0px 3.0px}
+    td.td9 {width: 16.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #c1c1c1 #c1c1c1 #bebdbd #c1c1c1; padding: 2.0px 3.0px 2.0px 3.0px}
+    td.td10 {width: 276.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #c1c1c1 #c1c1c1 #bebdbd #c1c1c1; padding: 2.0px 3.0px 2.0px 3.0px}
+    td.td11 {width: 201.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #c1c1c1 #c1c1c1 #bebdbd #c1c1c1; padding: 2.0px 3.0px 2.0px 3.0px}
   </style>
 </head>
 <body>
 <p class="p1"><font class="f1"></font><br></p>
 <h3 align="center" style="margin: 0.0px 0.0px 5.3px 0.0px; text-align: center"><font face="Courier" size="7" color="#0b0b0b" class="f2"><u>Upcoming Dates</u><u></u></font></h3>
 <p class="p3"><font class="f1"></font><br></p>
-<p class="p4"><font class="f1"></font><br></p>
+<p class="p3"><font class="f1"></font><br></p>
 <table cellspacing="0" cellpadding="0" class="t1">
   <tbody>
     <tr>
-      <td valign="top" class="td1">
-        <p align="right" class="p5"><font face="Courier" size="4" class="f3">2026-10-08 20:00</font></p>
+      <td valign="bottom" class="td1">
+        <p align="right" class="p4"><font face="Courier" size="4" class="f3">2026-05-28 20:00</font></p>
       </td>
-      <td valign="top" class="td2">
-        <p class="p3"><font class="f1"></font><br></p>
+      <td valign="bottom" class="td2">
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
-      <td valign="top" class="td3">
-        <p class="p6"><font face="Courier" size="4" color="#103cc0" class="f4"><a href="http://www.kaaitheater.be/"><u>Kaaitheater</u><font class="f1"><u></u></font></a></font></p>
+      <td valign="bottom" class="td3">
+        <p class="p6"><font face="Courier" size="4" class="f3">CC Zwanberg</font></p>
       </td>
-      <td valign="top" class="td4">
-        <p class="p6"><font face="Courier" size="4" class="f3">Brussel</font></p>
+      <td valign="bottom" class="td4">
+        <p class="p6"><font face="Courier" size="4" class="f3">Heist-op-den-Berg</font></p>
+      </td>
+      <td valign="bottom" class="td5">
+        <p class="p6"><font face="Courier" size="4" class="f3">Vurrukkelijk (reading)</font></p>
+      </td>
+      <td valign="bottom" class="td6">
+        <p class="p5"><font class="f1"></font><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="bottom" class="td1">
+        <p align="right" class="p4"><font face="Courier" size="4" class="f3">2026-06-01 19:00</font></p>
+      </td>
+      <td valign="bottom" class="td2">
+        <p class="p5"><font class="f1"></font><br></p>
+      </td>
+      <td valign="bottom" class="td3">
+        <p class="p6"><font face="Courier" size="4" class="f3">Linguapolis / University of Antwerp</font></p>
+      </td>
+      <td valign="bottom" class="td4">
+        <p class="p6"><font face="Courier" size="4" class="f3">Antwerp</font></p>
+      </td>
+      <td valign="bottom" class="td5">
+        <p class="p6"><font face="Courier" size="4" class="f3">Alle woorden die ik nog niet kende</font></p>
+      </td>
+      <td valign="bottom" class="td6">
+        <p class="p5"><font class="f1"></font><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="bottom" class="td1">
+        <p align="right" class="p4"><font face="Courier" size="4" class="f3">2026-06-11</font></p>
+      </td>
+      <td valign="bottom" class="td2">
+        <p class="p5"><font class="f1"></font><br></p>
+      </td>
+      <td valign="bottom" class="td3">
+        <p class="p6"><font face="Courier" size="4" class="f3">Shakespeare is Dead Festival</font></p>
+      </td>
+      <td valign="bottom" class="td4">
+        <p class="p6"><font face="Courier" size="4" class="f3">Leuven</font></p>
       </td>
       <td valign="top" class="td5">
+        <p class="p6"><font face="Courier" size="4" class="f3">Alle woorden die ik nog niet kende</font></p>
+      </td>
+      <td valign="bottom" class="td6">
+        <p class="p6"><font face="Courier" size="4" class="f3">READING OF ENGLISH TRANSLATION</font></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="bottom" class="td1">
+        <p align="right" class="p4"><font face="Courier" size="4" class="f3">2026-06-23 19:00</font></p>
+      </td>
+      <td valign="bottom" class="td2">
+        <p class="p5"><font class="f1"></font><br></p>
+      </td>
+      <td valign="bottom" class="td3">
+        <p class="p6"><font face="Courier" size="4" class="f3">Het Oude Badhuis</font></p>
+      </td>
+      <td valign="bottom" class="td4">
+        <p class="p6"><font face="Courier" size="4" class="f3">Antwerp</font></p>
+      </td>
+      <td valign="top" class="td7">
         <p class="p6"><font face="Courier" size="4" class="f3">All Day I Dream About Soccer</font></p>
+      </td>
+      <td valign="bottom" class="td6">
+        <p class="p6"><font face="Courier" size="4" class="f3">WORK-IN-PROGRESS</font></p>
       </td>
     </tr>
     <tr>
       <td valign="top" class="td1">
-        <p align="right" class="p5"><font face="Courier" size="4" class="f3">2026-10-09 20:00</font></p>
+        <p align="right" class="p4"><font face="Courier" size="4" class="f3">2026-09-19</font></p>
       </td>
       <td valign="top" class="td2">
-        <p class="p3"><font class="f1"></font><br></p>
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
       <td valign="top" class="td3">
-        <p class="p6"><font face="Courier" size="4" color="#103cc0" class="f4"><a href="http://www.kaaitheater.be/"><u>Kaaitheater</u><font class="f1"><u></u></font></a></font></p>
+        <p class="p6"><font face="Courier" size="4" class="f3">Tanzquartier</font></p>
       </td>
       <td valign="top" class="td4">
-        <p class="p6"><font face="Courier" size="4" class="f3">Brussel</font></p>
+        <p class="p6"><font face="Courier" size="4" class="f3">Vienna</font></p>
       </td>
       <td valign="top" class="td5">
-        <p class="p6"><font face="Courier" size="4" class="f3">All Day I Dream About Soccer</font></p>
+        <p class="p6"><font face="Courier" size="4" class="f3">Klapping INITIATION</font></p>
+      </td>
+      <td valign="bottom" class="td6">
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
     </tr>
     <tr>
       <td valign="top" class="td1">
-        <p align="right" class="p5"><font face="Courier" size="4" class="f3">2026-10-10 18:00</font></p>
+        <p align="right" class="p4"><font face="Courier" size="4" class="f3">2026-09-20</font></p>
       </td>
       <td valign="top" class="td2">
-        <p class="p3"><font class="f1"></font><br></p>
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
       <td valign="top" class="td3">
-        <p class="p6"><font face="Courier" size="4" color="#103cc0" class="f4"><a href="http://www.kaaitheater.be/"><u>Kaaitheater</u><font class="f1"><u></u></font></a></font></p>
+        <p class="p6"><font face="Courier" size="4" class="f3">Tanzquartier</font></p>
       </td>
       <td valign="top" class="td4">
-        <p class="p6"><font face="Courier" size="4" class="f3">Brussel</font></p>
+        <p class="p6"><font face="Courier" size="4" class="f3">Vienna</font></p>
       </td>
       <td valign="top" class="td5">
-        <p class="p6"><font face="Courier" size="4" class="f3">All Day I Dream About Soccer</font></p>
+        <p class="p6"><font face="Courier" size="4" class="f3">Klapping INITIATION</font></p>
+      </td>
+      <td valign="bottom" class="td6">
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
     </tr>
     <tr>
-      <td valign="top" class="td1">
-        <p align="right" class="p5"><font face="Courier" size="4" class="f3">2026-10-14 20:00</font></p>
+      <td valign="top" class="td8">
+        <p align="right" class="p4"><font face="Courier" size="4" class="f3">2026-10-08 20:00</font></p>
       </td>
-      <td valign="top" class="td2">
-        <p class="p3"><font class="f1"></font><br></p>
+      <td valign="top" class="td9">
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
-      <td valign="top" class="td3">
+      <td valign="top" class="td10">
+        <p class="p6"><font face="Courier" size="4" color="#103cc0" class="f4"><a href="http://www.kaaitheater.be/"><u>Kaaitheater</u><font class="f1"><u></u></font></a></font></p>
+      </td>
+      <td valign="top" class="td11">
+        <p class="p6"><font face="Courier" size="4" class="f3">Brussels</font></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p6"><font face="Courier" size="4" class="f3">All Day I Dream About Soccer</font></p>
+      </td>
+      <td valign="bottom" class="td6">
+        <p class="p5"><font class="f1"></font><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td8">
+        <p align="right" class="p4"><font face="Courier" size="4" class="f3">2026-10-09 20:00</font></p>
+      </td>
+      <td valign="top" class="td9">
+        <p class="p5"><font class="f1"></font><br></p>
+      </td>
+      <td valign="top" class="td10">
+        <p class="p6"><font face="Courier" size="4" color="#103cc0" class="f4"><a href="http://www.kaaitheater.be/"><u>Kaaitheater</u><font class="f1"><u></u></font></a></font></p>
+      </td>
+      <td valign="top" class="td11">
+        <p class="p6"><font face="Courier" size="4" class="f3">Brussels</font></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p6"><font face="Courier" size="4" class="f3">All Day I Dream About Soccer</font></p>
+      </td>
+      <td valign="bottom" class="td6">
+        <p class="p5"><font class="f1"></font><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td8">
+        <p align="right" class="p4"><font face="Courier" size="4" class="f3">2026-10-10 18:00</font></p>
+      </td>
+      <td valign="top" class="td9">
+        <p class="p5"><font class="f1"></font><br></p>
+      </td>
+      <td valign="top" class="td10">
+        <p class="p6"><font face="Courier" size="4" color="#103cc0" class="f4"><a href="http://www.kaaitheater.be/"><u>Kaaitheater</u><font class="f1"><u></u></font></a></font></p>
+      </td>
+      <td valign="top" class="td11">
+        <p class="p6"><font face="Courier" size="4" class="f3">Brussels</font></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p6"><font face="Courier" size="4" class="f3">All Day I Dream About Soccer</font></p>
+      </td>
+      <td valign="bottom" class="td6">
+        <p class="p5"><font class="f1"></font><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td8">
+        <p align="right" class="p4"><font face="Courier" size="4" class="f3">2026-10-14 20:00</font></p>
+      </td>
+      <td valign="top" class="td9">
+        <p class="p5"><font class="f1"></font><br></p>
+      </td>
+      <td valign="top" class="td10">
         <p class="p6"><font face="Courier" size="4" color="#103cc0" class="f4"><a href="http://www.monty.be/"><u>Monty</u><font class="f1"><u></u></font></a></font></p>
       </td>
-      <td valign="top" class="td4">
-        <p class="p6"><font face="Courier" size="4" class="f3">Antwerpen</font></p>
+      <td valign="top" class="td11">
+        <p class="p6"><font face="Courier" size="4" class="f3">Antwerp</font></p>
       </td>
-      <td valign="top" class="td5">
+      <td valign="top" class="td7">
         <p class="p6"><font face="Courier" size="4" class="f3">All Day I Dream About Soccer</font></p>
+      </td>
+      <td valign="bottom" class="td6">
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
     </tr>
     <tr>
-      <td valign="top" class="td1">
-        <p align="right" class="p5"><font face="Courier" size="4" class="f3">2026-10-15 20:00</font></p>
+      <td valign="top" class="td8">
+        <p align="right" class="p4"><font face="Courier" size="4" class="f3">2026-10-15 20:00</font></p>
       </td>
-      <td valign="top" class="td2">
-        <p class="p3"><font class="f1"></font><br></p>
+      <td valign="top" class="td9">
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
-      <td valign="top" class="td3">
+      <td valign="top" class="td10">
         <p class="p6"><font face="Courier" size="4" color="#103cc0" class="f4"><a href="http://www.monty.be/"><u>Monty</u><font class="f1"><u></u></font></a></font></p>
       </td>
-      <td valign="top" class="td4">
-        <p class="p6"><font face="Courier" size="4" class="f3">Antwerpen</font></p>
+      <td valign="top" class="td11">
+        <p class="p6"><font face="Courier" size="4" class="f3">Antwerp</font></p>
       </td>
-      <td valign="top" class="td5">
+      <td valign="top" class="td7">
         <p class="p6"><font face="Courier" size="4" class="f3">All Day I Dream About Soccer</font></p>
+      </td>
+      <td valign="bottom" class="td6">
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
     </tr>
     <tr>
-      <td valign="top" class="td1">
-        <p align="right" class="p5"><font face="Courier" size="4" class="f3">2026-11-06 20:15</font></p>
+      <td valign="top" class="td8">
+        <p align="right" class="p4"><font face="Courier" size="4" class="f3">2026-11-06 20:15</font></p>
       </td>
-      <td valign="top" class="td2">
-        <p class="p3"><font class="f1"></font><br></p>
+      <td valign="top" class="td9">
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
-      <td valign="top" class="td3">
+      <td valign="top" class="td10">
         <p class="p6"><font face="Courier" size="4" color="#103cc0" class="f4"><a href="https://www.maastd.nl/"><u>Maaspodium</u><font class="f1"><u></u></font></a></font></p>
       </td>
-      <td valign="top" class="td4">
+      <td valign="top" class="td11">
         <p class="p6"><font face="Courier" size="4" class="f3">Rotterdam</font></p>
       </td>
-      <td valign="top" class="td5">
+      <td valign="top" class="td7">
         <p class="p6"><font face="Courier" size="4" class="f3">All Day I Dream About Soccer</font></p>
+      </td>
+      <td valign="bottom" class="td6">
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
     </tr>
     <tr>
-      <td valign="top" class="td1">
-        <p align="right" class="p5"><font face="Courier" size="4" class="f3">2026-12-12 17:00</font></p>
+      <td valign="top" class="td8">
+        <p align="right" class="p4"><font face="Courier" size="4" class="f3">2026-12-05</font></p>
       </td>
-      <td valign="top" class="td2">
-        <p class="p3"><font class="f1"></font><br></p>
+      <td valign="top" class="td9">
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
-      <td valign="top" class="td3">
+      <td valign="top" class="td10">
+        <p class="p6"><font face="Courier" size="4" class="f3">Redstar Line Museum</font></p>
+      </td>
+      <td valign="top" class="td11">
+        <p class="p6"><font face="Courier" size="4" class="f3">Antwerp</font></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p6"><font face="Courier" size="4" class="f3">Pidgin Antwerpen</font></p>
+      </td>
+      <td valign="bottom" class="td6">
+        <p class="p5"><font class="f1"></font><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td8">
+        <p align="right" class="p4"><font face="Courier" size="4" class="f3">2026-12-12 17:00</font></p>
+      </td>
+      <td valign="top" class="td9">
+        <p class="p5"><font class="f1"></font><br></p>
+      </td>
+      <td valign="top" class="td10">
         <p class="p6"><font face="Courier" size="4" class="f3">December Dance CC Brugge</font></p>
       </td>
-      <td valign="top" class="td4">
+      <td valign="top" class="td11">
         <p class="p6"><font face="Courier" size="4" class="f3">Brugge</font></p>
       </td>
-      <td valign="top" class="td5">
+      <td valign="top" class="td7">
         <p class="p6"><font face="Courier" size="4" class="f3">All Day I Dream About Soccer</font></p>
+      </td>
+      <td valign="bottom" class="td6">
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
     </tr>
     <tr>
-      <td valign="top" class="td1">
-        <p align="right" class="p5"><font face="Courier" size="4" class="f3">2026-12-13 18:00</font></p>
+      <td valign="top" class="td8">
+        <p align="right" class="p4"><font face="Courier" size="4" class="f3">2026-12-13 18:00</font></p>
       </td>
-      <td valign="top" class="td2">
-        <p class="p3"><font class="f1"></font><br></p>
+      <td valign="top" class="td9">
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
-      <td valign="top" class="td3">
+      <td valign="top" class="td10">
         <p class="p6"><font face="Courier" size="4" color="#103cc0" class="f4"><a href="http://www.cultuurcentrumkortrijk.be/"><u>Schouwburg Kortrijk</u><font class="f1"><u></u></font></a></font></p>
       </td>
-      <td valign="top" class="td4">
+      <td valign="top" class="td11">
         <p class="p6"><font face="Courier" size="4" class="f3">Kortrijk</font></p>
       </td>
-      <td valign="top" class="td5">
+      <td valign="top" class="td7">
         <p class="p6"><font face="Courier" size="4" class="f3">All Day I Dream About Soccer</font></p>
+      </td>
+      <td valign="bottom" class="td6">
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
     </tr>
     <tr>
-      <td valign="top" class="td1">
-        <p align="right" class="p5"><font face="Courier" size="4" class="f3">2026-12-13 20:30</font></p>
+      <td valign="top" class="td8">
+        <p align="right" class="p4"><font face="Courier" size="4" class="f3">2026-12-13 20:30</font></p>
       </td>
-      <td valign="top" class="td2">
-        <p class="p3"><font class="f1"></font><br></p>
+      <td valign="top" class="td9">
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
-      <td valign="top" class="td3">
+      <td valign="top" class="td10">
         <p class="p6"><font face="Courier" size="4" color="#103cc0" class="f4"><a href="http://www.cultuurcentrumkortrijk.be/"><u>Schouwburg Kortrijk</u><font class="f1"><u></u></font></a></font></p>
       </td>
-      <td valign="top" class="td4">
+      <td valign="top" class="td11">
         <p class="p6"><font face="Courier" size="4" class="f3">Kortrijk</font></p>
       </td>
-      <td valign="top" class="td5">
+      <td valign="top" class="td7">
         <p class="p6"><font face="Courier" size="4" class="f3">All Day I Dream About Soccer</font></p>
+      </td>
+      <td valign="bottom" class="td6">
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
     </tr>
     <tr>
-      <td valign="top" class="td1">
-        <p align="right" class="p5"><font face="Courier" size="4" class="f3">2027-01-28 20:30</font></p>
+      <td valign="top" class="td8">
+        <p align="right" class="p4"><font face="Courier" size="4" class="f3">2027-01-28 20:30</font></p>
       </td>
-      <td valign="top" class="td2">
-        <p class="p3"><font class="f1"></font><br></p>
+      <td valign="top" class="td9">
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
-      <td valign="top" class="td3">
+      <td valign="top" class="td10">
         <p class="p6"><font face="Courier" size="4" color="#103cc0" class="f4"><a href="http://www.campo.nu/"><u>CAMPO</u><font class="f1"><u></u></font></a></font></p>
       </td>
-      <td valign="top" class="td4">
-        <p class="p6"><font face="Courier" size="4" class="f3">Gent</font></p>
+      <td valign="top" class="td11">
+        <p class="p6"><font face="Courier" size="4" class="f3">Ghent</font></p>
       </td>
-      <td valign="top" class="td5">
+      <td valign="top" class="td7">
         <p class="p6"><font face="Courier" size="4" class="f3">All Day I Dream About Soccer</font></p>
+      </td>
+      <td valign="bottom" class="td6">
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
     </tr>
     <tr>
-      <td valign="top" class="td1">
-        <p align="right" class="p5"><font face="Courier" size="4" class="f3">2027-02-17 20:00</font></p>
+      <td valign="top" class="td8">
+        <p align="right" class="p4"><font face="Courier" size="4" class="f3">2027-02-17 20:00</font></p>
       </td>
-      <td valign="top" class="td2">
-        <p class="p3"><font class="f1"></font><br></p>
+      <td valign="top" class="td9">
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
-      <td valign="top" class="td3">
+      <td valign="top" class="td10">
         <p class="p6"><font face="Courier" size="4" color="#103cc0" class="f4"><a href="https://brakkegrond.nl/#"><u>Brakke Grond</u><font class="f1"><u></u></font></a></font></p>
       </td>
-      <td valign="top" class="td4">
+      <td valign="top" class="td11">
         <p class="p6"><font face="Courier" size="4" class="f3">Amsterdam</font></p>
       </td>
-      <td valign="top" class="td5">
+      <td valign="top" class="td7">
         <p class="p6"><font face="Courier" size="4" class="f3">All Day I Dream About Soccer</font></p>
+      </td>
+      <td valign="bottom" class="td6">
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
     </tr>
     <tr>
-      <td valign="top" class="td1">
-        <p align="right" class="p5"><font face="Courier" size="4" class="f3">2027-02-18 20:00</font></p>
+      <td valign="top" class="td8">
+        <p align="right" class="p4"><font face="Courier" size="4" class="f3">2027-02-18 20:00</font></p>
       </td>
-      <td valign="top" class="td2">
-        <p class="p3"><font class="f1"></font><br></p>
+      <td valign="top" class="td9">
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
-      <td valign="top" class="td3">
+      <td valign="top" class="td10">
         <p class="p6"><font face="Courier" size="4" color="#103cc0" class="f4"><a href="https://brakkegrond.nl/#"><u>Brakke Grond</u><font class="f1"><u></u></font></a></font></p>
       </td>
-      <td valign="top" class="td4">
+      <td valign="top" class="td11">
         <p class="p6"><font face="Courier" size="4" class="f3">Amsterdam</font></p>
       </td>
-      <td valign="top" class="td5">
+      <td valign="top" class="td7">
         <p class="p6"><font face="Courier" size="4" class="f3">All Day I Dream About Soccer</font></p>
+      </td>
+      <td valign="bottom" class="td6">
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
     </tr>
     <tr>
-      <td valign="top" class="td1">
-        <p align="right" class="p5"><font face="Courier" size="4" class="f3">2027-02-20 20:00</font></p>
+      <td valign="top" class="td8">
+        <p align="right" class="p4"><font face="Courier" size="4" class="f3">2027-02-20 20:00</font></p>
       </td>
-      <td valign="top" class="td2">
-        <p class="p3"><font class="f1"></font><br></p>
+      <td valign="top" class="td9">
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
-      <td valign="top" class="td3">
+      <td valign="top" class="td10">
         <p class="p6"><font face="Courier" size="4" class="f3">Theater Rotterdam</font></p>
       </td>
-      <td valign="top" class="td4">
+      <td valign="top" class="td11">
         <p class="p6"><font face="Courier" size="4" class="f3">Rotterdam</font></p>
       </td>
-      <td valign="top" class="td5">
+      <td valign="top" class="td7">
         <p class="p6"><font face="Courier" size="4" class="f3">All Day I Dream About Soccer</font></p>
+      </td>
+      <td valign="bottom" class="td6">
+        <p class="p5"><font class="f1"></font><br></p>
       </td>
     </tr>
   </tbody>
 </table>
-<p class="p7"><font face="Courier" size="4" color="#101010" class="f5"><span class="Apple-converted-space"> </span></font></p>
 </body>
 </html>
